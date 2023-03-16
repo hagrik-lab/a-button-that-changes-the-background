@@ -1,0 +1,65 @@
+body {
+    background-color: brown;
+    overflow: hidden;
+    height: 100vh;
+    cursor: none;
+}
+
+.clickMe {
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-size: cover;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: solid 7px black;
+    cursor: none;
+}
+
+.clickMe:active {
+    height: 130px;
+    width: 570px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-size: cover;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: solid 7px black;
+    cursor: none;
+   }
+
+span {
+    width: 32px;
+    height: 32px;
+    background: url('https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/512/paper-plane-64.png');
+    background-size: cover;
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: animate linear 2.3s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -5000%);
+    }
+}
